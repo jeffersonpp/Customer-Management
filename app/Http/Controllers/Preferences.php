@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Preferences;
+use App\Preference;
 
 class Preferences extends Controller
 {

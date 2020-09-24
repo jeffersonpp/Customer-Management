@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Preference;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Client;
-use App\Preferences;
+use App\Preference;
 
 class NewPreference extends Controller
 {
@@ -26,7 +26,7 @@ public function create($id)
         'client_id'=>'required',
         'text'=> 'required'
       ]);
-      $pref = new Preferences([
+      $pref = new Preference([
         'client_id' => $request->get('client_id'),
         'title'=> $request->get('title'),
         'text'=> $request->get('text'),

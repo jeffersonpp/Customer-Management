@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Preference;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Preferences;
+use App\Preference;
 
 class UpdatePreference extends Controller
 {
@@ -16,7 +16,7 @@ class UpdatePreference extends Controller
      
     public function destroy($id)
     {
-         $pref = Preferences::find($id);
+         $pref = Preference::find($id);
          $client_id = $pref->client_id;
          $pref->delete();
     
