@@ -1,6 +1,6 @@
-# Laravel Client Management
+# Customer Management
 
-A Client Management with Customer, Schedules and preferences.
+Client Management with schedule, client list and preferences.
 
 ## Technologies
 
@@ -11,8 +11,8 @@ A Client Management with Customer, Schedules and preferences.
 ### To Run
 
 - Update Composer (composer update)
-- Create and configure a .ENV file to your context (Do not forget DB and MAPBOX TOKEN)
 - Create the database
+- Create a .ENV file to your context (Do not forget database connection and MAPBOX TOKEN)
 - Run migration     (php artisan migrate)
 - Run the server    (php artisan serve)
 
